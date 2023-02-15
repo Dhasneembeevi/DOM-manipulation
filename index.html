@@ -1,0 +1,55 @@
+<!-- QUESTION: 
+    DOM Manipulation (adding functionality to HTML elements)
+Create a rectangular container.
+Create three buttons below the container named as changeColor, addChild and remove Child (buttons).
+Give css to the container like width, height, and background color etc.
+Retrieve the container and the button objects and give functionality to the buttons.
+When clicked on changeColor button, the color of the container should be changed.
+When clicked on addChild button, a new square box should be added inside the parent container (rectangular box which is created earlier).
+The parent container should have flex property.
+When clicked on the removeChild button, the last added square box child should be removed/disappeared. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:350px;
+            border: solid 2px black;
+            display: flex;
+            height:270px;
+        }
+        .dom{
+            margin: 50px;
+            align-items: center;
+        }
+        .buttons{
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly ;
+        }
+    </style>
+</head>
+<div class="dom"> <h3>Rectangular Container</h3>
+<div class="container" id="container">
+    <div id="child">
+       
+    </div>
+</div><div class="buttons">
+
+<button id="changeColor">Change color</button>
+<button id="addChild">ADD child</button>
+<button id="removeChild"> Remove child</button>
+
+    
+</div>
+</div>
+<body>
+    <script src="./script.js"></script>
+</body>
+</html>
